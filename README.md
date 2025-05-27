@@ -1,6 +1,6 @@
 # Golang - Config
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=raizen_golang-config&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=raizen_golang-config) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=raizen_golang-config&metric=coverage)](https://sonarcloud.io/summary/new_code?id=raizen_golang-config)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=payly-solucoes-de-pagamentos_golang-config&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=payly-solucoes-de-pagamentos_golang-config) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=payly-solucoes-de-pagamentos_golang-config&metric=coverage)](https://sonarcloud.io/summary/new_code?id=payly-solucoes-de-pagamentos_golang-config)
 
 Abstraction over [Viper](https://github.com/spf13/viper) to read environment variables.
 
@@ -9,7 +9,7 @@ Environment variables from `.env` files are also supported.
 ## Installation
 
 ```bash
-  go get -u github.com/raizen/golang-config
+  go get -u github.com/payly-solucoes-de-pagamentos/golang-config
 ```
 
 ## Usage 1
@@ -17,7 +17,7 @@ Environment variables from `.env` files are also supported.
 ```go
 package main
 
-import "github.com/raizen/golang-config"
+import "github.com/payly-solucoes-de-pagamentos/golang-config"
 
 func main() {
   prefix := "mtz" // all environment variables starting with MTZ_ will be loaded
@@ -39,7 +39,7 @@ func main() {
 ```go
 package main
 
-import "github.com/raizen/golang-config"
+import "github.com/payly-solucoes-de-pagamentos/golang-config"
 
 func init() {
   prefix := "mtz" // all environment variables starting with MTZ_ will be loaded
@@ -59,7 +59,7 @@ func main() {
 ```go
 package main
 
-import "github.com/raizen/golang-config"
+import "github.com/payly-solucoes-de-pagamentos/golang-config"
 
 func init() {
   config.LoadScopedEnv("scope1", "sc1", "../config/.env")

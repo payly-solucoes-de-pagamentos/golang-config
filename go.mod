@@ -1,4 +1,4 @@
-module github.com/raizen/golang-config
+module github.com/payly-solucoes-de-pagamentos/golang-config
 
 go 1.19
 
